@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Echoo - The ultimate Discord bot by solo developer Pxsl. Explore Echoo's glitchy aesthetics and cutting-edge features!">
+    <title>Echoo - Discord Bot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #5865F2;
+            text-shadow: 0 0 10px #5865F2, 0 0 20px #5865F2;
+            animation: glitch 1.5s infinite;
+        }
+        @keyframes glitch {
+            0% {
+                text-shadow: 0 0 10px #5865F2, 0 0 20px #5865F2;
+            }
+            50% {
+                text-shadow: 5px 5px 15px #5865F2, -5px -5px 15px #5865F2;
+            }
+            100% {
+                text-shadow: 0 0 10px #5865F2, 0 0 20px #5865F2;
+            }
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            background: #5865F2;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #4753c4;
+        }
+        section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ECHOO</div>
+    </header>
+    <section>
+        <h1>Welcome to Echoo</h1>
+        <p>Echoo is your ultimate Discord bot, crafted with precision by solo developer Pxsl. Dive into an immersive experience and unleash the power of Echoo in your Discord server!</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h2>Custom Commands</h2>
+            <p>Create and manage custom commands tailored for your server's needs.</p>
+        </div>
+        <div class="feature">
+            <h2>Moderation Tools</h2>
+            <p>Keep your community safe with advanced moderation features.</p>
+        </div>
+        <div class="feature">
+            <h2>Engagement Features</h2>
+            <p>Boost activity with fun games, giveaways, and more.</p>
+        </div>
+    </section>
+    <section id="invite">
+        <h2>Invite Echoo</h2>
+        <p>Join the community of servers powered by Echoo!</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="btn">Invite Echoo Now</a>
+    </section>
+    <footer>
+        <p>Made with ❤️ by Pxsl</p>
+    </footer>
+</body>
+</html>
